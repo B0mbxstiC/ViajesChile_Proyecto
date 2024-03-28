@@ -51,3 +51,15 @@ i {
     color: white;
     padding: 0.5rem;
 }
+
+/* Footer */
+
+footer{
+    background-color: #0DCBEF;
+    color: white;
+}
+
+footer i{
+    display: inline !important;
+    font-size: 2rem;
+}
