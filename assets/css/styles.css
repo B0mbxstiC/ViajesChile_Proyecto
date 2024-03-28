@@ -1,3 +1,53 @@
-.carousel-inner img {
-    
+
+/* Barra de navegación */
+.flaticon {
+    width: 2rem;
+}
+
+
+.colorBlanco {
+    color: white;
+    text-align: center;
+}
+
+/* Quienes somos */
+
+.altocaja {
+    text-align: left;
+}
+
+i {
+    color: white;
+    text-align: center;
+    background-color: #0DCBEF;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.cajap{
+    height: 15rem;
+    overflow: hidden;
+}
+
+/* Destacados:Tarjetas */
+
+.card img{
+    object-fit: cover;
+    width: 100%;
+    height: 8rem;
+}
+
+.card {
+    background-color: #0DCBEF;
+    color: white;
+    text-align: left;
+    overflow: hidden;
+}   
+
+/* Contacto */
+.form-label {
+    display: block;
+    text-align: left;
+    color: white;
+    padding: 0.5rem;
 }

@@ -2,96 +2,252 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Joel Alarcón">
-    <meta name="description" content="Añadir descripción de página web">
-    <meta name="keywords" content="Viajes Chile, Turismo, Paisajes, Trekking, Acampadas">
-    <title>Viajes Chile</title>
-    <!--CDN Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!--CSS Native-->
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <!--Google Fonts-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Joel Alarcón">
+  <meta name="description" content="Añadir descripción de página web">
+  <meta name="keywords" content="Viajes Chile, Turismo, Paisajes, Trekking, Acampadas">
+  <title>Viajes Chile</title>
+  <!--CDN Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--CSS Native-->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <!--Google Fonts-->
 
-    <!--FontAwesome-->
-    <script src="https://kit.fontawesome.com/2970ea1a21.js" crossorigin="anonymous"></script>
+  <!--FontAwesome-->
+  <script src="https://kit.fontawesome.com/2970ea1a21.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
-    <!--NavBar-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-        <div class="container">
-            <a href=""></a>
-            <a href="#" class="navbar-brand">Web zone</a>
-            <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <!--NavBar-->
+  <nav  class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div class="container">
+      <div>
+        <img class="flaticon" src="./assets/img/viajes.svg" alt="flaticon">
+        <a href="#" class="navbar-brand">Viajes Chile</a>
+      </div>
+      
+      <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <div class="collapse navbar-collapse"></div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
 
-        </div>
-    </nav>
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" aria-current="page">Inicio</a>
+          </li>
 
-    <!--Carrousel-->
-    <div id="carouselindicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselindicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselindicators" data-slide-to="1"></li>
-          <li data-target="#carouselindicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner vh-100">
-          <div class="carousel-item active">
-            <img class="d-block justify-content-center align-items-center w-100" src="./assets/img/carousel1.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block justify-content-center align-items-center w-100 vh-100" src="./assets/img/carousel2.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block justify-content-center align-items-center w-100 vh-100" src="./assets/img/carousel3.jpg" alt="Third slide">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselindicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselindicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
+          <li class="nav-item">
+            <a class="nav-link active" href="#quienes" aria-current="page">Quienes somos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#destacados" aria-current="page">Destacados</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" aria-current="page">Contacto</a>
+          </li>
+
+        </ul>
+
       </div>
 
-      <main>
-        <h2 class="py-5">
-            hola
-        </h2>
-      </main>
+    </div>
+  </nav>
+
+  <!--Carrousel-->
+  <header id="home">
+    <div id="sliders" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button class="active" data-bs-target="#sliders" data-bs-slide-to="0"></button>
+        <button  data-bs-target="#sliders" data-bs-slide-to="1"></button>
+        <button  data-bs-target="#sliders" data-bs-slide-to="2"></button>
+      </div>
+  
+      <div class="carousel-inner carousel-fade w-100">
+  
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./assets/img/carousel1.jpg"
+            alt="First slide">
+        </div>
+  
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./assets/img/carousel2.jpg"
+            alt="Second slide">
+             
+        </div>
+  
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./assets/img/carousel3.jpg"
+            alt="Third slide">
+            
+        </div>
+      </div>
+      
+      <button class="carousel-control-prev" data-bs-target="#sliders" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+  
+      <button class="carousel-control-next" data-bs-target="#sliders" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+  
+    </div>
+  </header>
+  
+  <!--Contenido principal-->
+  <main class="container-fluid bg-black text-center py-5">
+
+    <!--Quienes somos-->
+    <section class="d-none d-md-block">
+      <h2 id="quienes" class="colorBlanco py-3">
+        ¿Quienes somos?
+      </h2>
+      <div class="container text-center colorBlanco">
+        <div class="row mx-auto px-5 py-5">
+          <div class="col-10 col-md-4 altocaja mx-auto py-2">
+            <div class="d-block py-1">
+              <i class="fa-solid fa-plane"></i>
+            </div>
+            <p class="cajap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, distinctio quo, veritatis fugit temporibus sint quod aliquid, repudiandae repellat explicabo saepe ipsum harum? Dolorum laboriosam aliquid itaque error quos minus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus pariatur quam possimus reiciendis vero ex asperiores odio assumenda. Deleniti quod natus ratione recusandae. Fugit nesciunt, saepe assumenda magni at possimus!</p>
+            
+          </div>
+            
+          <div class="col-10 col-md-4 py-2 altocaja mx-auto">          
+            <p class="cajap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laudantium unde voluptates reprehenderit, sapiente ducimus architecto voluptatum molestias, explicabo perferendis voluptas. Rerum, natus corporis. Exercitationem accusamus ratione aliquid non sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id mollitia fugiat libero molestiae quasi ipsam, quibusdam nemo sint, asperiores sequi provident ratione porro rerum obcaecati, saepe laboriosam veritatis sunt! Dicta.</p>       
+            <div class="d-block py-1">
+              <i class="fa-solid fa-mountain"></i>
+            </div>             
+          </div>
+    
+          <div class="col-10 col-md-4 altocaja mx-auto py-2">
+            <div class="d-block py-1">
+              <i class="fa-solid fa-route"></i>
+            </div>
+            <div class="cajap">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur facilis vero inventore eveniet, cumque asperiores hic excepturi maiores libero, suscipit molestiae illo, labore velit esse sequi exercitationem doloribus autem laboriosam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ea impedit consequatur. Consequuntur facilis inventore vitae sit. Assumenda ex repellendus, officia possimus similique ratione. Eaque quam repudiandae totam! Tenetur, deserunt.</p>
+            </div>
+          </div>  
+        </div>     
+      </div>
+    </section>
+    
+
+    <!--Destacados-->
+    <section>
+      <h2 id="destacados" class="colorBlanco py-3">
+        Destacados
+      </h2>
+      <div class="container text-center colorBlanco">
+        <div class="row mx-auto px-5 py-5">
+          <div class="col-10 col-md-3 altocaja mx-auto py-2">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/img/card1.jpg" class="card-img-top" alt="card1">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum</h5>
+                <p class="card-text pb-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-10 col-md-3 altocaja mx-auto py-2">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/img/card2.jpg" class="card-img-top" alt="card2">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum</h5>
+                <p class="card-text pb-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-10 col-md-3 altocaja mx-auto py-2">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/img/card3.jpg" class="card-img-top" alt="card3">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum</h5>
+                <p class="card-text pb-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-10 col-md-3 altocaja mx-auto py-2">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/img/card4.jpg" class="card-img-top" alt="card4">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum</h5>
+                <p class="card-text pb-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                
+              </div>
+            </div>
+          </div>
+  
+        </div>     
+      </div>
+    </section>  
+
+    <!--Contacto-->
+    <section class="container">
+      <h2 class="colorBlanco">
+        Contacto
+      </h2>
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <div>
+            <label for="txtNombre" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" id="txtNombre">
+          </div>
+
+          <div>
+            <label for="txtNombre" class="form-label">Asunto</label>
+            <input type="text" class="form-control" id="txtNombre">
+          </div>
+
+          <div class=" ">            
+            <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="txtCorreo" placeholder="">
+          </div>
+
+          <div class="">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="txtMensaje" rows="8"></textarea>
+          </div>
+
+          <button class="btn btn-info my-3 d-block text-left">Enviar</button>
+        </div>
+        
+      </div>
+    </section>
+      
+
+  </main>
+
+  
 
 
-    <header>
+  <!--Footer-->
+  <footer>
 
-    </header>
+  </footer>
 
-    <main>
-
-    </main>
-
-    <footer>
-
-    </footer>
-
-    <!--CDN JQuery-->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!--CDN Script Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <!--JavaScript Native-->
-    <script src="./assets/js/script.js"></script>
+  <!--CDN JQuery-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!--CDN Script Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!--JavaScript Native-->
+  <script src="./assets/js/script.js"></script>
 
 </body>
 
